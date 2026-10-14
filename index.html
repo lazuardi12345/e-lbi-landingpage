@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lembaga Bahasa Internasional - LBI FIB UI</title>
+  <meta name="description" content="Lembaga Bahasa Internasional FIB UI - BIPA Program (Bahasa Indonesia untuk Penutur Asing) dan PPB Program (Program Pelayanan Bahasa).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="logo">
+    <a href="https://lbifib.ui.ac.id/" title="Lembaga Bahasa Internasional FIB UI" aria-label="LBI FIB UI Beranda">
+      <img src="img/lbi-logo.png" alt="Universitas Indonesia - Lembaga Bahasa Internasional FIB UI" class="logo-img">
+    </a>
+  </header>
+
+  <main class="split">
+    <!-- Panel BIPA (Kiri) -->
+    <section class="panel bipa" id="panel-bipa">
+      <div class="panel-bg" role="img" aria-label="BIPA Background"></div>
+      <div class="panel-content">
+        <a class="btn yellow" href="https://elbi.bipa.lbifib.ui.ac.id/">BIPA Program</a>
+        <h2 data-i18n="bipa">Bahasa Indonesia untuk Penutur Asing</h2>
+      </div>
+    </section>
+
+    <!-- Panel PPB (Kanan) -->
+    <section class="panel ppb" id="panel-ppb">
+      <div class="panel-bg" role="img" aria-label="PPB Background"></div>
+      <div class="panel-content">
+        <a class="btn blue" href="https://elbi.ppb.lbifib.ui.ac.id/">PPB Program</a>
+        <h2 data-i18n="ppb">Program Pelayanan Bahasa</h2>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pemilih Bahasa -->
+  <div class="lang" id="lang">
+    <ul class="lang-menu" id="langMenu" role="listbox" hidden>
+      <li role="option" data-lang="id"><img src="img/flags/id.svg" alt="ID">Indonesia</li>
+      <li role="option" data-lang="en"><img src="img/flags/en.svg" alt="EN">English</li>
+      <li role="option" data-lang="ja"><img src="img/flags/ja.svg" alt="JA">日本語</li>
+      <li role="option" data-lang="ko"><img src="img/flags/ko.svg" alt="KO">한국어</li>
+      <li role="option" data-lang="zh"><img src="img/flags/zh.svg" alt="ZH">中文</li>
+    </ul>
+    <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false" aria-label="Ganti Bahasa">
+      <img id="langFlag" src="img/flags/id.svg" alt="ID">
+      <span id="langCode">ID</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+    </button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
